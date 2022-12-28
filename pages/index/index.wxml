@@ -1,9 +1,6 @@
 <!--pages/index/index.wxml-->
 <view>
-	<view class="search">
-		<text class="iconfont icon-sousuo font"></text>
-		<input class="input" type="text" placeholder="搜索" />
-	</view>
+	<search></search>
 	<swiper class="swiper" indicator-dots="{{indicatorDots}}" indicator-active-color="{{ndicatorActiveColor}}"
 		autoplay="true">
 		<swiper-item wx:for="{{swiperList}}" wx:key="index">

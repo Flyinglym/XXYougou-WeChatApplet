@@ -1,0 +1,25 @@
+<view>
+	<search></search>
+	<view class="sort">
+		<view class="box active">
+			推荐
+		</view>
+		<view class="box">
+			销量
+		</view>
+		<view class="box">
+			价格
+		</view>
+	</view>
+	<view class="main">
+		<view class="main_list" wx:for="{{list}}" wx:key="goods_id">
+			<view class="imgBox">
+				<image class="img" src="{{item.goods_big_logo}}" mode="" />
+			</view>
+			<view class="text">
+				<text>{{item.goods_name}}</text>
+				<text>￥{{item.goods_price}}</text>
+			</view>
+		</view>
+	</view>
+</view>

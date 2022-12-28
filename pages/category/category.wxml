@@ -1,2 +1,26 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view>
+	<search></search>
+	<view class="content">
+		<!-- 侧边导航 -->
+		<scroll-view class="nav" scroll-y scroll-with-animation="true">
+			<view class="navItem {{item.cat_id==navActiveId?'active':''}}" data-id="{{item.cat_id}}" bindtap="navActive"
+				wx:for="{{navList}}" wx:key="cat_id">
+				{{item.cat_name}}
+			</view>
+		</scroll-view>
+		<!-- 内容 -->
+		<scroll-view class="main" scroll-y>
+			<view wx:for="{{mainList}}" wx:key="cat_id">
+				<view class="main_name">
+					/{{item.cat_name}}/
+				</view>
+				<view class="main_list">
+					<view class="main_list-item" wx:for="{{item.children}}" wx:key="cat_id" bindtap="goods_list" data-id="{{item.cat_id}}">
+						<image class="img" src="{{item.cat_icon}}" mode="" />
+						<text class="text">{{item.cat_name}}</text>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</view>

@@ -1,18 +1,65 @@
 // pages/category/category.js
+import {
+    request
+} from '../../utils/request';
 Page({
-
     /**
      * 页面的初始数据
      */
     data: {
-
+        navList: [],
+        mainList: [],
+        navActiveId: ""
     },
+    async reader() {
+        let navRes = await request({
+            url: "categories",
+            method: "get",
+            dataType: "json"
+        })
+        // console.log(navRes.message);
+        this.setData({
+            navList: navRes.message,
+            navActiveId: navRes.message[0].cat_id
+        })
+        this.mainList()
+    },
+    navActive(e) {
+        let navActiveId = e.currentTarget.dataset.id
+        // console.log(navActiveId);
+        this.setData({
+            navActiveId
+        })
+        this.mainList()
+    },
+    mainList() {
+        let navList = this.data.navList
+        let mainList = this.data.mainList
+        let navActiveId = this.data.navActiveId
+        navList.forEach(item => {
+            if (item.cat_id == navActiveId) {
+                mainList = item.children
+            }
+        })
+        // console.log(mainList);
 
+        this.setData({
+            mainList
+        })
+        // console.log(this.data.mainList);
+    },
+    goods_list(e) {
+        let id = e.currentTarget.dataset.id
+        wx.navigateTo({
+            url: '../goods_list/goods_list?id=' + id,
+        })
+        // console.log(e.currentTarget.dataset.id);
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        this.reader()
     },
 
     /**

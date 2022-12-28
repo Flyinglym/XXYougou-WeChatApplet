@@ -1,7 +1,8 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/category/category"
+        "pages/category/category",
+        "pages/goods_list/goods_list"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -10,13 +11,16 @@
         "navigationBarTextStyle": "white"
     },
     "tabBar": {
-        "list": [{
-            "pagePath": "pages/index/index",
-            "text": "首页"
-        },{
-            "pagePath": "pages/category/category",
-            "text": "分类"
-        }]
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "分类"
+            }
+        ]
     },
     "style": "v2",
     "sitemapLocation": "sitemap.json"

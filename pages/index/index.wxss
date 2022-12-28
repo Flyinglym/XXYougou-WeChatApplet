@@ -1,27 +1,6 @@
 /* pages/index/index.wxss */
-@import "../../style/font/stylesheet.wxss";
 
-.search {
-	width: auto;
-	height: 100rpx;
-	background-color: #d95255;
-	/* padding:0 20rpx; */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-}
 
-.search .input {
-	width: 90%;
-	text-align: center;
-	background-color: white;
-}
-
-.font {
-	position: absolute;
-	left: 40%;
-}
 
 .swiper .img {
 	width: 100%;
