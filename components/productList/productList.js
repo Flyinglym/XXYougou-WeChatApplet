@@ -4,17 +4,17 @@ Component({
      * 组件的属性列表
      */
     properties: {
-        list:{
-            type:Object,
-            value:{}
+        list: {
+            type: Object,
+            value: {}
         },
-        pagenum:{
-            type:Number,
-            value:1
+        pagenum: {
+            type: Number,
+            value: 1
         },
-        pagesize:{
-            type:Number,
-            value:10
+        pagesize: {
+            type: Number,
+            value: 10
         }
     },
 
@@ -29,6 +29,12 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+        goodsDetall(e) {
+            let goodsId = e.currentTarget.dataset.goodsid
+            wx.navigateTo({
+                url: '../goods_detail/goods_detail?goodsid=' + goodsId,
+            })
+            console.log(e);
+        },
     }
 })

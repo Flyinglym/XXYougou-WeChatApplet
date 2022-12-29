@@ -41,13 +41,7 @@ Page({
             list
         })
     },
-    goodsDetall(e) {
-        let goodsId = e.currentTarget.dataset.goodsid
-        wx.navigateTo({
-            url: '../goods_detail/goods_detail?goodsid=' + goodsId,
-        })
-        console.log(e);
-    },
+
     /**
      * 生命周期函数--监听页面加载
      */
