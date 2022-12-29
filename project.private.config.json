@@ -21,6 +21,13 @@
                     "query": "goodsid=57428",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/collect/collect",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

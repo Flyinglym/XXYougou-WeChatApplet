@@ -50,6 +50,7 @@ Page({
     },
     goods_list(e) {
         let id = e.currentTarget.dataset.id
+        console.log(id);
         wx.navigateTo({
             url: '../goods_list/goods_list?id=' + id,
         })

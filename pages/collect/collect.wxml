@@ -1,0 +1,37 @@
+<view>
+	<tabs></tabs>
+	<view class="classification">
+		<view class="box">
+			全部
+		</view>
+		<view class="box">
+			正在热卖
+		</view>
+		<view class="box">
+			即将上线
+		</view>
+	</view>
+	<view class="main">
+		<view class="main_list" wx:for="{{list}}" wx:key="goods_id" bindtap="goodsDetall"
+			data-goodsId="{{item.id}}">
+			<view class="imgBox">
+				<image class="img" src="{{item.img}}" mode="" />
+			</view>
+			<view class="text">
+				<text>{{item.title}}</text>
+				<text>￥{{item.id}}</text>
+			</view>
+		</view>
+	</view>
+	<!-- <view class="classificationList">
+		<view class="item" wx:for="{{list}}" wx:key="id">
+			<view class="imgBox">
+				<image class="img" src="{{item.img}}" mode=""/>
+			</view>
+			<view>
+				<text>{{item.title}}</text>
+				<text>￥{{item.price}}</text>
+			</view>
+		</view>
+	</view> -->
+</view>

@@ -1,0 +1,31 @@
+<view class="receipt">
+	<button>+添加收货地址</button>
+</view>
+<view class="productList">
+	<checkbox-group bindchange="">
+		<view class="item" wx:for="{{list}}" wx:key="id">
+			<view>
+				<checkbox value="" />
+			</view>
+			<view class="item_information">
+				<view class="imgBox">
+					<image class="img" src="{{item.img}}" mode="" />
+				</view>
+				<view class="main">
+					<view class="item_name">
+						{{item.name}}
+					</view>
+					<view class="addAndReduce">
+						<view class="item_price">￥{{item.price}}</view>
+						<view class="item_operation">
+							<button size="mini">-</button>
+							<input class="inp" type="number" name="" id="" value="1"/>
+							<button size="mini">+</button>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</checkbox-group>
+
+</view>

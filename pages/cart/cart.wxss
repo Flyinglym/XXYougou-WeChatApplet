@@ -1,0 +1,48 @@
+.receipt{
+	width: 100%;
+	height: 130rpx;
+	display: flex;
+	align-items: center;
+	border-bottom: 10rpx solid red;
+}
+.item{
+	height: 250rpx;
+	display: flex;
+	align-items: center;
+	padding: 0 20rpx;
+}
+
+.item_information{
+	display: flex;
+	align-items: center;
+}
+.item_information .main{
+	width: 70%;
+	height: 200rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.item_information .imgBox{
+	width: 30%;
+	height: 200rpx;
+}
+.addAndReduce{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.imgBox .img{
+	width: 100%;
+	height: 100%;
+}
+.inp{
+	width: 50rpx;
+	line-height: 32rpx;
+	text-align: center;
+}
+
+.item_operation{
+	display: flex;
+	align-items: center;
+}

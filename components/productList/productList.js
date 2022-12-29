@@ -34,7 +34,7 @@ Component({
             wx.navigateTo({
                 url: '../goods_detail/goods_detail?goodsid=' + goodsId,
             })
-            console.log(e);
+            // console.log(e);
         },
     }
 })

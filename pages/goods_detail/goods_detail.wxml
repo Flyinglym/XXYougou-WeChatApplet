@@ -11,8 +11,8 @@
 		<view class="goods_name">
 			{{list.goods_name}}
 		</view>
-		<view class="collection">
-			<image class="img" src="../../image/加星收藏.png" mode=""/>
+		<view class="collection" bindtap="collectionItem">
+			<image class="img" src="../../image/{{collectionFlag?'加星收藏_填充':'加星收藏'}}.png" mode="" />
 			<text>收藏</text>
 		</view>
 	</view>
@@ -23,26 +23,26 @@
 	<view class="toolbar">
 		<view class="operation1">
 			<view class="box">
-				<image class="img" src="../../image/客服.png" mode=""/>
+				<image class="img" src="../../image/客服.png" mode="" />
 				<view>
 					联系客服
 				</view>
 			</view>
 			<view class="box">
-				<image class="img" src="../../image/分享.png" mode=""/>
+				<image class="img" src="../../image/分享.png" mode="" />
 				<view>
 					分享
 				</view>
 			</view>
 			<view class="box">
-				<image class="img" src="../../image/购物车空.png" mode=""/>
+				<image class="img" src="../../image/购物车空.png" mode="" />
 				<view>
 					购物车
 				</view>
 			</view>
 		</view>
 		<view class="operation2">
-			<text class="text">加入购物车</text>
+			<text class="text" bindtap="addShopping">加入购物车</text>
 			<text class="text">立即购买</text>
 		</view>
 	</view>
