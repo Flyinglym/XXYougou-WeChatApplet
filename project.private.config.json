@@ -14,6 +14,13 @@
                     "query": "id=8",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/goods_detail/goods_detail",
+                    "query": "goodsid=57428",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

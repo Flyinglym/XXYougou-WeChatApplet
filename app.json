@@ -2,7 +2,8 @@
     "pages": [
         "pages/index/index",
         "pages/category/category",
-        "pages/goods_list/goods_list"
+        "pages/goods_list/goods_list",
+        "pages/goods_detail/goods_detail"
     ],
     "window": {
         "backgroundTextStyle": "light",
