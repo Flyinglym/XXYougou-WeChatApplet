@@ -7,7 +7,13 @@ Page({
     data: {
         list: ''
     },
-
+    goodsDetall(e) {
+        let id = e.currentTarget.dataset.goodsid
+        console.log(id);
+        wx.navigateTo({
+            url: "../goods_detail/goods_detail?goodsid="+id
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
